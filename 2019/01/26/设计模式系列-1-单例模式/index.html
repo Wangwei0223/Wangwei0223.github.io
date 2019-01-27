@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="设计模式系列-1.单例模式今天并行更新JS和设计模式… CSS先放一放吧…面试要紧..CSS会布局动画变形基本知识就差不多, 答不上来也不算硬伤..JS和设计模式答不上来就是硬伤了 为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式(还是一种方式的不懂阿…) 这点放在JS更明显了…为什么说前端入门容易">
+<meta name="description" content="设计模式系列-1.单例模式为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式">
 <meta name="keywords" content="JavaScript,设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="设计模式系列-1. 单例模式">
+<meta property="og:title" content="设计模式系列-1.单例模式">
 <meta property="og:url" content="http://yoursite.com/2019/01/26/设计模式系列-1-单例模式/index.html">
 <meta property="og:site_name" content="Wei&#39;s blog">
-<meta property="og:description" content="设计模式系列-1.单例模式今天并行更新JS和设计模式… CSS先放一放吧…面试要紧..CSS会布局动画变形基本知识就差不多, 答不上来也不算硬伤..JS和设计模式答不上来就是硬伤了 为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式(还是一种方式的不懂阿…) 这点放在JS更明显了…为什么说前端入门容易">
+<meta property="og:description" content="设计模式系列-1.单例模式为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-27T02:09:52.587Z">
+<meta property="og:updated_time" content="2019-01-27T04:49:04.793Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="设计模式系列-1. 单例模式">
-<meta name="twitter:description" content="设计模式系列-1.单例模式今天并行更新JS和设计模式… CSS先放一放吧…面试要紧..CSS会布局动画变形基本知识就差不多, 答不上来也不算硬伤..JS和设计模式答不上来就是硬伤了 为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式(还是一种方式的不懂阿…) 这点放在JS更明显了…为什么说前端入门容易">
+<meta name="twitter:title" content="设计模式系列-1.单例模式">
+<meta name="twitter:description" content="设计模式系列-1.单例模式为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>设计模式系列-1. 单例模式 | Wei's blog</title>
+  <title>设计模式系列-1.单例模式 | Wei's blog</title>
   
 
 
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">设计模式系列-1. 单例模式</h1>
+          <h1 class="post-title" itemprop="name headline">设计模式系列-1.单例模式</h1>
         
 
         <div class="post-meta">
@@ -342,11 +342,8 @@
       
 
       
-        <h3 id="设计模式系列-1-单例模式"><a href="#设计模式系列-1-单例模式" class="headerlink" title="设计模式系列-1.单例模式"></a>设计模式系列-1.单例模式</h3><p>今天并行更新JS和设计模式… CSS先放一放吧…面试要紧..CSS会布局动画变形基本知识就差不多, 答不上来也不算硬伤..JS和设计模式答不上来就是硬伤了</p>
-<p>为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式(还是一种方式的不懂阿…)</p>
-<p>这点放在JS更明显了…为什么说前端入门容易精通难…入门容易毕竟写的再天花乱坠也逃不出浏览器和HTTP协议.(Node.js单说…内核V8按说也没逃出浏览器..). 精通难一方面是兼容性(IE也要挣钱啊), 一方面就是JS的难度了…<br><a id="more"></a><br>我认为, JS绝对算得上难度大的语言..难的不在语法..其实语法难是有好处的..就是大家的代码规范被限制在语法中了..而JS…基本没有语法的束缚..ES5, 6甚至7开始乱飞..各种标准混用(webpack)….</p>
-<p>所以就造成一个现象..两个人写的JS..看起来比两种语言差距还大…更可怕的是..如果这两个人都不懂设计模式…….</p>
-<p>所以约束我们和让我避免采坑的方法, 就是设计模式..</p>
+        <h3 id="设计模式系列-1-单例模式"><a href="#设计模式系列-1-单例模式" class="headerlink" title="设计模式系列-1.单例模式"></a>设计模式系列-1.单例模式</h3><p>为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式</p>
+<a id="more"></a>
 <blockquote>
 <p>大部分资料出自网络..提纲按照汤姆大叔的来</p>
 </blockquote>
@@ -412,7 +409,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/26/categories/" rel="prev" title="设计模式系列-2.构造函数模式">
+              <a href="/2019/01/26/设计模式系列-2.构造函数模式/" rel="prev" title="设计模式系列-2.构造函数模式">
                 设计模式系列-2.构造函数模式 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -483,7 +480,7 @@
               <img class="site-author-image" itemprop="image" src="https://avatars3.githubusercontent.com/u/16531241?s=460&v=4" alt="Wei Wang">
             
               <p class="site-author-name" itemprop="name">Wei Wang</p>
-              <p class="site-description motion-element" itemprop="description">Wei's blog</p>
+              <p class="site-description motion-element" itemprop="description">WeChat & Phone 15650750057</p>
           </div>
 
           <nav class="site-state motion-element">
