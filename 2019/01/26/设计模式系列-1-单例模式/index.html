@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="设计模式,JavaScript,">
 
 
 
@@ -80,13 +80,14 @@
 
 
 <meta name="description" content="设计模式系列-1.单例模式今天并行更新JS和设计模式… CSS先放一放吧…面试要紧..CSS会布局动画变形基本知识就差不多, 答不上来也不算硬伤..JS和设计模式答不上来就是硬伤了 为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式(还是一种方式的不懂阿…) 这点放在JS更明显了…为什么说前端入门容易">
+<meta name="keywords" content="设计模式,JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式系列-1. 单例模式">
 <meta property="og:url" content="http://yoursite.com/2019/01/26/设计模式系列-1-单例模式/index.html">
-<meta property="og:site_name" content="王维的博客">
+<meta property="og:site_name" content="Wei&#39;s blog">
 <meta property="og:description" content="设计模式系列-1.单例模式今天并行更新JS和设计模式… CSS先放一放吧…面试要紧..CSS会布局动画变形基本知识就差不多, 答不上来也不算硬伤..JS和设计模式答不上来就是硬伤了 为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式(还是一种方式的不懂阿…) 这点放在JS更明显了…为什么说前端入门容易">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-27T01:31:59.631Z">
+<meta property="og:updated_time" content="2019-01-27T02:09:52.587Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计模式系列-1. 单例模式">
 <meta name="twitter:description" content="设计模式系列-1.单例模式今天并行更新JS和设计模式… CSS先放一放吧…面试要紧..CSS会布局动画变形基本知识就差不多, 答不上来也不算硬伤..JS和设计模式答不上来就是硬伤了 为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式(还是一种方式的不懂阿…) 这点放在JS更明显了…为什么说前端入门容易">
@@ -97,9 +98,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":8,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -125,7 +126,7 @@
 
 
 
-  <title>设计模式系列-1. 单例模式 | 王维的博客</title>
+  <title>设计模式系列-1. 单例模式 | Wei's blog</title>
   
 
 
@@ -155,7 +156,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">王维的博客</span>
+        <span class="site-title">Wei's blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -261,7 +262,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王维的博客">
+      <meta itemprop="name" content="Wei's blog">
     </span>
 
     
@@ -281,7 +282,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-26T20:31:47-05:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-26T20:31:00-05:00">
                 2019-01-26
               </time>
             
@@ -291,6 +292,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -321,8 +344,7 @@
       
         <h3 id="设计模式系列-1-单例模式"><a href="#设计模式系列-1-单例模式" class="headerlink" title="设计模式系列-1.单例模式"></a>设计模式系列-1.单例模式</h3><p>今天并行更新JS和设计模式… CSS先放一放吧…面试要紧..CSS会布局动画变形基本知识就差不多, 答不上来也不算硬伤..JS和设计模式答不上来就是硬伤了</p>
 <p>为什么要强调设计模式..太重要了这玩意..有的时候反思我为什么看不懂大神写的代码..一方面就是不懂设计模式..或者反应不出来这玩意到底是什么设计模式(还是一种方式的不懂阿…)</p>
-<p>这点放在JS更明显了…为什么说前端入门容易精通难…入门容易毕竟写的再天花乱坠也逃不出浏览器和HTTP协议.(Node.js单说…内核V8按说也没逃出浏览器..). 精通难一方面是兼容性(IE也要挣钱啊), 一方面就是JS的难度了…</p>
-<p>我认为, JS绝对算得上难度大的语言..难的不在语法..其实语法难是有好处的..就是大家的代码规范被限制在语法中了..而JS…基本没有语法的束缚..ES5, 6甚至7开始乱飞..各种标准混用(webpack)….</p>
+<p>这点放在JS更明显了…为什么说前端入门容易精通难…入门容易毕竟写的再天花乱坠也逃不出浏览器和HTTP协议.(Node.js单说…内核V8按说也没逃出浏览器..). 精通难一方面是兼容性(IE也要挣钱啊), 一方面就是JS的难度了…<br><a id="more"></a><br>我认为, JS绝对算得上难度大的语言..难的不在语法..其实语法难是有好处的..就是大家的代码规范被限制在语法中了..而JS…基本没有语法的束缚..ES5, 6甚至7开始乱飞..各种标准混用(webpack)….</p>
 <p>所以就造成一个现象..两个人写的JS..看起来比两种语言差距还大…更可怕的是..如果这两个人都不懂设计模式…….</p>
 <p>所以约束我们和让我避免采坑的方法, 就是设计模式..</p>
 <blockquote>
@@ -367,6 +389,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
+      
 
       
       
@@ -376,15 +406,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/26/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/26/categories/" rel="prev" title="设计模式系列-2.构造函数模式">
+                设计模式系列-2.构造函数模式 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -470,13 +500,47 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Wangwei0223" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/wang-wei-55-52-82/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-book"></i>知乎</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -538,7 +602,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -637,6 +701,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
