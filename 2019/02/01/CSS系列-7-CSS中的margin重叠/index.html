@@ -79,18 +79,24 @@
 
 
 
-<meta name="description" content="CSS系列-3.CSS选择器优先级的计算CSS选择器的计算遵从如下规则 1234*&amp;#123;&amp;#125;   /*通配符最低记为 0 0 0 0*/p&amp;#123;&amp;#125;   /*普通的标签 伪元素 记为 0 0 0 1*/.class&amp;#123;&amp;#125; /*类属性值 属性选择或伪类 记为 0 0 1 0*/#id&amp;#123;&amp;#125; /*id记为 0 1 0 0*/ 内联最高记为">
+<meta name="description" content="CSS系列-7.CSS中的margin重叠margin重叠的条件 float为none block元素(不包括inline-block, absolute, float) 只发生在垂直方向上   margin重叠的几种情况1.兄弟 12345678&amp;lt;div class=&quot;parent&quot;&amp;gt;		&amp;lt;div class=&quot;child&quot;&amp;gt;			内容		&amp;lt;/div&amp;gt;		&amp;l">
 <meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS系列-3.CSS选择器优先级的计算">
-<meta property="og:url" content="http://yoursite.com/2019/01/30/CSS系列-3-CSS选择器优先级的计算/index.html">
+<meta property="og:title" content="CSS系列-7.CSS中的margin重叠">
+<meta property="og:url" content="http://yoursite.com/2019/02/01/CSS系列-7-CSS中的margin重叠/index.html">
 <meta property="og:site_name" content="Wei&#39;s blog">
-<meta property="og:description" content="CSS系列-3.CSS选择器优先级的计算CSS选择器的计算遵从如下规则 1234*&amp;#123;&amp;#125;   /*通配符最低记为 0 0 0 0*/p&amp;#123;&amp;#125;   /*普通的标签 伪元素 记为 0 0 0 1*/.class&amp;#123;&amp;#125; /*类属性值 属性选择或伪类 记为 0 0 1 0*/#id&amp;#123;&amp;#125; /*id记为 0 1 0 0*/ 内联最高记为">
+<meta property="og:description" content="CSS系列-7.CSS中的margin重叠margin重叠的条件 float为none block元素(不包括inline-block, absolute, float) 只发生在垂直方向上   margin重叠的几种情况1.兄弟 12345678&amp;lt;div class=&quot;parent&quot;&amp;gt;		&amp;lt;div class=&quot;child&quot;&amp;gt;			内容		&amp;lt;/div&amp;gt;		&amp;l">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-31T04:38:51.056Z">
+<meta property="og:image" content="http://yoursite.com/images/pasted-29.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-30.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-31.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-32.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-33.png">
+<meta property="og:updated_time" content="2019-02-02T04:45:20.038Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS系列-3.CSS选择器优先级的计算">
-<meta name="twitter:description" content="CSS系列-3.CSS选择器优先级的计算CSS选择器的计算遵从如下规则 1234*&amp;#123;&amp;#125;   /*通配符最低记为 0 0 0 0*/p&amp;#123;&amp;#125;   /*普通的标签 伪元素 记为 0 0 0 1*/.class&amp;#123;&amp;#125; /*类属性值 属性选择或伪类 记为 0 0 1 0*/#id&amp;#123;&amp;#125; /*id记为 0 1 0 0*/ 内联最高记为">
+<meta name="twitter:title" content="CSS系列-7.CSS中的margin重叠">
+<meta name="twitter:description" content="CSS系列-7.CSS中的margin重叠margin重叠的条件 float为none block元素(不包括inline-block, absolute, float) 只发生在垂直方向上   margin重叠的几种情况1.兄弟 12345678&amp;lt;div class=&quot;parent&quot;&amp;gt;		&amp;lt;div class=&quot;child&quot;&amp;gt;			内容		&amp;lt;/div&amp;gt;		&amp;l">
+<meta name="twitter:image" content="http://yoursite.com/images/pasted-29.png">
 
 
 
@@ -120,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/30/CSS系列-3-CSS选择器优先级的计算/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/01/CSS系列-7-CSS中的margin重叠/">
 
 
 
 
 
-  <title>CSS系列-3.CSS选择器优先级的计算 | Wei's blog</title>
+  <title>CSS系列-7.CSS中的margin重叠 | Wei's blog</title>
   
 
 
@@ -253,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/30/CSS系列-3-CSS选择器优先级的计算/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/01/CSS系列-7-CSS中的margin重叠/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wei Wang">
@@ -270,7 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS系列-3.CSS选择器优先级的计算</h1>
+          <h1 class="post-title" itemprop="name headline">CSS系列-7.CSS中的margin重叠</h1>
         
 
         <div class="post-meta">
@@ -282,8 +288,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-30T23:35:00-05:00">
-                2019-01-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-01T22:44:00-05:00">
+                2019-02-01
               </time>
             
 
@@ -342,11 +348,35 @@
       
 
       
-        <h3 id="CSS系列-3-CSS选择器优先级的计算"><a href="#CSS系列-3-CSS选择器优先级的计算" class="headerlink" title="CSS系列-3.CSS选择器优先级的计算"></a>CSS系列-3.CSS选择器优先级的计算</h3><p>CSS选择器的计算遵从如下规则</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*&#123;&#125;   <span class="comment">/*通配符最低记为 0 0 0 0*/</span></span><br><span class="line"><span class="selector-tag">p</span>&#123;&#125;   <span class="comment">/*普通的标签 伪元素 记为 0 0 0 1*/</span></span><br><span class="line"><span class="selector-class">.class</span>&#123;&#125; <span class="comment">/*类属性值 属性选择或伪类 记为 0 0 1 0*/</span></span><br><span class="line"><span class="selector-id">#id</span>&#123;&#125; <span class="comment">/*id记为 0 1 0 0*/</span></span><br></pre></td></tr></table></figure>
-<p>内联最高记为 (<strong>不考虑!important的情况下</strong>) 1 0 0 0 </p>
-<p>从最高位比 最高为 1 比其他都大</p>
-<p>组合的情况<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> <span class="selector-tag">h2</span>&#123;&#125; <span class="comment">/*两个0 0 0 1 即为 0 0 0 2*/</span></span><br></pre></td></tr></table></figure></p>
+        <h3 id="CSS系列-7-CSS中的margin重叠"><a href="#CSS系列-7-CSS中的margin重叠" class="headerlink" title="CSS系列-7.CSS中的margin重叠"></a>CSS系列-7.CSS中的margin重叠</h3><h4 id="margin重叠的条件"><a href="#margin重叠的条件" class="headerlink" title="margin重叠的条件"></a>margin重叠的条件</h4><ol>
+<li>float为none</li>
+<li>block元素(不包括inline-block, absolute, float)</li>
+<li>只发生在垂直方向上 </li>
+</ol>
+<h4 id="margin重叠的几种情况"><a href="#margin重叠的几种情况" class="headerlink" title="margin重叠的几种情况"></a>margin重叠的几种情况</h4><p><strong>1.兄弟</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"parent"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line">			内容</span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line">			内容</span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.child</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">50%</span>; <span class="comment">/*高度是内容撑开的, 要记得height是尽可能小*/</span></span><br><span class="line">	<span class="attribute">background-color</span>: royalblue;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">5px</span> <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/pasted-29.png" alt="upload successful"></p>
+<p><strong>2.父子 子明明有上margin但是没体现出来</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.parent</span>&#123;</span><br><span class="line">	<span class="attribute">background-color</span>: coral;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/pasted-30.png" alt="upload successful"></p>
+<p><strong>条件</strong><br>相对比相邻兄弟元素margin重叠来说，父子级margin重叠需要满足以下几个条件(以margin-top重叠为例)：</p>
+<ol>
+<li>父元素不是BFC元素</li>
+<li>父元素没有padding-top值</li>
+<li>父元素没有border-top值</li>
+<li>父元素和第一个子元素之间没有inline元素分隔</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.child</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">50%</span>; <span class="comment">/*高度是内容撑开的, 要记得height是尽可能小*/</span></span><br><span class="line">	<span class="attribute">background-color</span>: royalblue;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">5px</span> <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.parent</span>&#123;</span><br><span class="line">	<span class="comment">/*float: left;/*注意float变BFC的包裹性*/</span></span><br><span class="line">	<span class="attribute">background-color</span>: coral;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">2px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/pasted-31.png" alt="upload successful"></p>
+<p>把父级改为BFC的话, 可见父子直接的margin回来了.</p>
+<p><strong>3.空的block 可以看出来margin 20px上下 没有撑开</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"void"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>&#123;</span><br><span class="line">	<span class="attribute">background-color</span>: lightgreen;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.void</span>&#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/pasted-32.png" alt="upload successful"></p>
+<p>出现可以直接控制是否要重叠的新属性<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-webkit-margin-collapse: &lt;collapse&gt;(默认重叠) | &lt;discard&gt;(取消) | &lt;separate&gt;(分隔)</span><br></pre></td></tr></table></figure></p>
+<p>需要注意的是: <strong>身处两个不同BFC的元素margin不重叠(两个蓝色内容块), 但是两个外层BFC(两个桔黄色块直接的margin还是重叠的)</strong></p>
+<p><img src="/images/pasted-33.png" alt="upload successful"></p>
 
       
     </div>
@@ -377,8 +407,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/29/CSS系列-2.CSS选择器/" rel="next" title="CSS系列-2.CSS选择器">
-                <i class="fa fa-chevron-left"></i> CSS系列-2.CSS选择器
+              <a href="/2019/01/30/CSS系列-6-CSS中盒模型/" rel="next" title="CSS系列-6.CSS中盒模型">
+                <i class="fa fa-chevron-left"></i> CSS系列-6.CSS中盒模型
               </a>
             
           </div>
@@ -386,10 +416,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/30/CSS系列-4-CSS中的各种单位/" rel="prev" title="CSS系列-4.CSS中的各种单位">
-                CSS系列-4.CSS中的各种单位 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -539,7 +565,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS系列-3-CSS选择器优先级的计算"><span class="nav-number">1.</span> <span class="nav-text">CSS系列-3.CSS选择器优先级的计算</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS系列-7-CSS中的margin重叠"><span class="nav-number">1.</span> <span class="nav-text">CSS系列-7.CSS中的margin重叠</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#margin重叠的条件"><span class="nav-number">1.1.</span> <span class="nav-text">margin重叠的条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#margin重叠的几种情况"><span class="nav-number">1.2.</span> <span class="nav-text">margin重叠的几种情况</span></a></li></ol></li></ol></div>
             
 
           </div>
